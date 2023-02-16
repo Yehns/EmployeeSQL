@@ -1,2 +1,6 @@
 # EmployeeSQL
 Module 9 
+
+The module 9 task requires the use of PostgreSQL 15 to sort and arrange data. 
+The first SQL file (Table_Creation.sql), sorts the imported data to list specific columns, creating primary and foreign keys to identify unique values, and links between tables to collate data. For example, creating the Employees table required the use of both primary and foreign keys. Allowing the “emp_title” to reference the “title_id” from the titles table allows both tables to build a “relationship”. Both the “emp_title” and “title_id” are the same characters, and thus allow the tables to be referenced and built uniquely.
+The second SQL file (Data_Analysis.sql) takes these newly created tables and allows basic analysis functions to be undertaken. Each function requires the joining of data from tables, and hihglights the importance of primary and foreign keys. The first function in the table gathers the employee: number, last name, first name, sex and salary. The salary is located on a different table, and contains an employee number (emp_no), and as the employee table contains the same employee number, the data can be joined from that specified integer. Most functions follow this similar procedure of using the ON and JOIN function to generate new tables, and sorting unique data sets from various tables. 
